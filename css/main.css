@@ -18,7 +18,7 @@ header{
 	left: 0;
 	right: 0;
 	height: 40px;
-	background-color: #333;
+	background-color: #c2c7c4;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 	-webkit-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
 	   -moz-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
@@ -43,27 +43,82 @@ nav ul li{
 
 nav ul li a{
 	text-decoration: none;
-	color: #fff;
-	
+	color: #FF7876;	
+	line-height: 1em;
+	font-family: "futura-pt", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
-.hide{
-	margin-left: 99999px;
+.hideText{
+	text-indent: -99999px;
 }
+
+.name{
+	text-align: center;
+	padding-top: 2.5em;
+	display: block;
+	color: #f95f5c;
+	font: 5em "corner-store", sans-serif;
+	text-shadow: 0 2px 2px #fff; 
+  }
 
 .iMac{
-	background-image: url('img/mac.png');
+	background-image: url('../img/mac.png');
+	background-repeat: no-repeat;
 	width: 461px;
+	height: 400px;
+	display: block;
 	margin: 0 auto;
+	margin-top: 16%;
+}
+
+.screen{
+	text-indent: -99999px;
 	display: block;
 }
+
+.bakery,
+.wow,
+.midGirth,
+.jirka {
+	background-image: url('../img/bakery.jpg');
+	width: 417px;
+	height: 260px;
+	display: inline-block;
+	margin: 20px 22px 120px 22px;
+}
+
+.wow{
+	background-image: url('../img/wow.jpg');
+}
+
+.midGirth{
+	background-image: url('../img/middlegirth.jpg');
+}
+
+.jirka{
+	background-image: url('../img/jirka.jpg');
+}
+
+
 
 /* #Page Styles
 ================================================== */
 
 #intro{
-	background-color: #000;
+	background-color: #ebe9e9;
 	width: 100%;
+}
+
+#wow{
+	background: url('../img/honey.png') repeat;
+}
+
+#midGirth{
+	background-color: #e6d4ac;
+}
+
+#jirka{
+	background-color: #221c35;
 }
 
 /* #Media Queries
