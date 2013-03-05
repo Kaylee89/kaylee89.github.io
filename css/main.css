@@ -1,10 +1,5 @@
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
+* Author: Kaylee Lim
 */
 
 /* Table of Content
@@ -16,9 +11,60 @@
 
 /* #Site Styles
 ================================================== */
+header{
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: #333;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
+	   -moz-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
+	        box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.11), 5px 0 15px rgba(0, 0, 0, 0.04);
+	  -webkit-box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.11), 5px 0 15px rgba(0, 0, 0, 0.04);
+	  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.11), 5px 0 15px rgba(0, 0, 0, 0.04);
+}
+
+nav{
+	position: absolute;
+	top: 0px;
+	right: 3em;
+}
+
+nav ul li{
+	display: inline;
+	vertical-align: baseline;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	
+}
+
+.hide{
+	margin-left: 99999px;
+}
+
+.iMac{
+	background-image: url('img/mac.png');
+	width: 461px;
+	margin: 0 auto;
+	display: block;
+}
 
 /* #Page Styles
 ================================================== */
+
+#intro{
+	background-color: #000;
+	width: 100%;
+}
 
 /* #Media Queries
 ================================================== */
