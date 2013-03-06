@@ -18,7 +18,7 @@ header{
 	left: 0;
 	right: 0;
 	height: 40px;
-	background-color: #c2c7c4;
+	background-color: #dae0dc;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 	-webkit-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
 	   -moz-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
@@ -30,7 +30,7 @@ header{
 
 nav{
 	position: absolute;
-	top: 0px;
+	top: -3px;
 	right: 3em;
 }
 
@@ -43,9 +43,8 @@ nav ul li{
 
 nav ul li a{
 	text-decoration: none;
-	color: #FF7876;	
-	line-height: 1em;
-	font-family: "futura-pt", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	color: #ec5c5a;
+	font: 1.1em/1em "futura-pt", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
 }
 
 .hideText{
@@ -60,6 +59,15 @@ nav ul li a{
 	font: 5em "corner-store", sans-serif;
 	text-shadow: 0 2px 2px #fff; 
   }
+  
+.nameSmall{
+	position: absolute;
+	top: 3px;
+	left: 1.8em;
+	color: #f95f5c;
+	font: 1.3em "corner-store", sans-serif;
+	text-shadow: 0 1px 1px #fff; 
+}
 
 .iMac{
 	background-image: url('../img/mac.png');
@@ -68,7 +76,7 @@ nav ul li a{
 	height: 400px;
 	display: block;
 	margin: 0 auto;
-	margin-top: 16%;
+	margin-top: 12%;
 }
 
 .screen{
@@ -103,6 +111,15 @@ nav ul li a{
 
 /* #Page Styles
 ================================================== */
+
+.subtitle{
+	font-family: "proxima-nova", verdana, serif;
+	font-size: 2.2em;
+	width: 100%;
+	color: #4A4E46;
+	text-align: center;
+	font-weight: 100;
+}
 
 #intro{
 	background-color: #ebe9e9;
