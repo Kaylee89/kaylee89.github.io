@@ -81,7 +81,7 @@ nav ul li a{
 
 .nextBtn,
 .prevBtn{
-	opacity: 0.2;
+	opacity: 0.3;
 	position: absolute;
 	top: 42%;
 	right: 5%;
@@ -165,6 +165,33 @@ nav ul li a{
 
 #jirka{
 	background-color: #221c35;
+}
+
+.screenshot{
+	position: relative;
+	top: 15%;
+	width: 700px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.screenshot img{
+	border: 1px solid #d8d8d8;
+	width: 100%;
+	-webkit-box-shadow: 0px 9px 19px rgba(52, 68, 59, 0.57);
+	-moz-box-shadow:    0px 9px 19px rgba(52, 68, 59, 0.57);
+	box-shadow:         0px 9px 19px rgba(52, 68, 59, 0.57);	
+}
+
+.description{
+	display: inline-block;
+	text-align: center;
+	width: 700px;
+	position: absolute;
+	bottom: 4.5em;
+	left: 23%;
+	font-family: "proxima-nova", Helvetica, Arial, Sans-Serif;
 }
 
 /* #Page slider CSS
