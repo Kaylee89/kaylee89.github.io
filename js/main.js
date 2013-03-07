@@ -9,12 +9,12 @@ $(document).ready(function() {
 /*	Bakery page
 	========================================= */
 	$('#bakeryPort').contentSlide({
-			start : 1
+			start : 0
 		,	speed : 2000
 	})
 
 	$('a[href="#nextSlide"]').click(function(){
-		$(this).closest('.wideViewport').contentSlide('to', 2);
+		$(this).closest('.wideViewport').contentSlide('next');
 		// You can use:
 		// $viewport.contentSlide('next')
 		// $viewport.contentSlide('prev')
@@ -23,12 +23,7 @@ $(document).ready(function() {
 	});
 
 	$('a[href="#prevSlide"]').click(function(){
-		$(this).closest('.wideViewport').contentSlide('to', 0);
+		$(this).closest('.wideViewport').contentSlide('prev');
 	});
-
-	$('a[href="#prevSlide"]').click(function(){
-		$(this).closest('.wideViewport').contentSlide('to', 1);
-	});
-	
 
 });

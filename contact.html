@@ -33,41 +33,27 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact me</a></li>
+                    <li><a href="about.hmtl">About</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
                     <li><a href="#">C.V.</a></li>
                 </ul>
             </nav>
         </header>
-
-		<form id="entryForm" action="post" method="post">
+        	
+        <p class="">If you would like to contact me about </p>
+        
+        <div class="formContainer">
+				
+			<form id="contactForm" action="post" method="post">
 				
 		    <label>Name</label>
-		    <input type="text" class="inputText" name="name" placeholder="your name here" required>
+		    <input type="text" class="inputText" name="name" placeholder="your name here" required><br />
 		
 		    <label>Email</label>
 		    <input name="email" type="email" class="inputText" required><br />
 		
-		    <label>Phone Number</label>
-		    <input name="number" type="tel" class="inputText" required><br />
-		
-			    <select name="category">
-				    <option value="select">Select Category</option>
-				    <option value="children">Children's Section</option>
-				    <option value="american">American Express Open Section</option>
-				    <option value="centre">CentrePort Illumination Section</option>
-				    <option value="avant">Avant Garde Section</option>
-				    <option value="geni">Gen-i Creative Excellence Section</option>
-				    <option value="bra">Bizarre Bra® Section</option>
-				    <option value="airnz">AirNZ South Pacific Section</option>
-			    </select>
-		
 		    <label>Message</label>
-		    <textarea name="message" placeholder="Please describe your concept briefly" class="message"></textarea>
-		
-		     <div class="entryKit">
-		     	<p>*The Entry Kit, International Entry Kit & Key Dates can be downloaded <a href="#">here</a></p>
-		     </div>
+		    <textarea name="message" placeholder="Do leave me a message" class="message"></textarea>
 		     
 		     <div class="success"></div>
 		
@@ -75,9 +61,10 @@
 		
 		</form>
 
+		</div>
+		
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
             </footer>
         </div>
 
