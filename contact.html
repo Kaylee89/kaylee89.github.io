@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Kaylee's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/curtain.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+		<script type="text/javascript" src="//use.typekit.net/dqz0kfp.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="js/libs/modernizr-2.6.2.min.js"></script>
+    </head>
+
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1 class="hideText">Kaylee's portfolio</h1>
+            <span class="nameSmall">Kaylee</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#">C.V.</a></li>
+                </ul>
+            </nav>
+        </header>
+
+		<form id="entryForm" action="post" method="post">
+				
+		    <label>Name</label>
+		    <input type="text" class="inputText" name="name" placeholder="your name here" required>
+		
+		    <label>Email</label>
+		    <input name="email" type="email" class="inputText" required><br />
+		
+		    <label>Phone Number</label>
+		    <input name="number" type="tel" class="inputText" required><br />
+		
+			    <select name="category">
+				    <option value="select">Select Category</option>
+				    <option value="children">Children's Section</option>
+				    <option value="american">American Express Open Section</option>
+				    <option value="centre">CentrePort Illumination Section</option>
+				    <option value="avant">Avant Garde Section</option>
+				    <option value="geni">Gen-i Creative Excellence Section</option>
+				    <option value="bra">Bizarre Bra® Section</option>
+				    <option value="airnz">AirNZ South Pacific Section</option>
+			    </select>
+		
+		    <label>Message</label>
+		    <textarea name="message" placeholder="Please describe your concept briefly" class="message"></textarea>
+		
+		     <div class="entryKit">
+		     	<p>*The Entry Kit, International Entry Kit & Key Dates can be downloaded <a href="#">here</a></p>
+		     </div>
+		     
+		     <div class="success"></div>
+		
+		      <input id="submit" class="submitButton" name="submit" type="submit" value="Submit">
+		
+		</form>
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/libs/curtain.js"></script>
+         <script src="js/custom.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

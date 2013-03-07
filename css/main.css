@@ -79,6 +79,28 @@ nav ul li a{
 	margin-top: 12%;
 }
 
+.nextBtn{
+	opacity: 0.2;
+	position: absolute;
+	top: 42%;
+	right: 5%;
+	background-image: url('../img/next.png');
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	content: "";
+	-webkit-transition: opacity 0.8s ease-in-out;
+	-moz-transition: opactiy 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out;
+	 transition: opacity 0.8s ease-in-out;
+}
+
+.nextBtn:hover{
+	opacity: 1;
+}
+
 .screen{
 	text-indent: -99999px;
 	display: block;
@@ -137,6 +159,44 @@ nav ul li a{
 #jirka{
 	background-color: #221c35;
 }
+
+/* #Page slider CSS
+================================================== */
+.wideViewport{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.contentStrip {
+	position: relative;
+	width: 300%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.videoViewport .contentStrip,
+.galleryViewport .contentStrip {
+	width: 400%;
+}
+
+.contentWrapper{
+	display: block;
+	width: 33.33%;
+	float: left;
+	height: 100%;
+	position: relative;
+}
+
+.videoViewport .contentWrapper,
+.galleryViewport .contentWrapper {
+	width: 25%;
+}
+
 
 /* #Media Queries
 ================================================== */
