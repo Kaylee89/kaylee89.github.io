@@ -1,5 +1,6 @@
 /*
-* Author: Kaylee Lim
+* CSS for personal portfolio site
+* Author: Kaylee Lim aka JH 
 */
 
 /* Table of Content
@@ -57,7 +58,11 @@ nav ul li a{
 	display: block;
 	color: #f95f5c;
 	font: 5em "corner-store", sans-serif;
-	text-shadow: 0 2px 2px #fff;
+	text-shadow: 0 2px 2px #3b8887;
+  }
+  
+  .test{
+  	color: #3b8887;
   }
 
 .nameSmall{
@@ -145,17 +150,33 @@ nav ul li a{
 /* #Page Styles
 ================================================== */
 
-.subtitle{
+h2{
 	font-family: "proxima-nova", verdana, serif;
 	font-size: 2.2em;
 	width: 100%;
 	color: #4A4E46;
 	text-align: center;
-	font-weight: 100;
+	font-weight: 300;
+}
+
+.subtitle{
+	font-family: "proxima-nova", verdana, serif;
+	font-size: 1.2em;
+	width: 100%;
+	color: #4A4E46;
+	text-align: center;
 }
 
 #intro{
-	background-color: #ebe9e9;
+	background: #40aba9; /* Old browsers */
+	background: -moz-linear-gradient(top, #40aba9 29%, #52a8a4 73%, #e8dcbd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(29%,#40aba9), color-stop(73%,#52a8a4), color-stop(100%,#e8dcbd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #40aba9 29%,#52a8a4 73%,#e8dcbd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #40aba9 29%,#52a8a4 73%,#e8dcbd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #40aba9 29%,#52a8a4 73%,#e8dcbd 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #40aba9 29%,#52a8a4 73%,#e8dcbd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40aba9', endColorstr='#e8dcbd',GradientType=0 ); /* IE6-9 */
+		
 	width: 100%;
 }
 
@@ -168,7 +189,32 @@ nav ul li a{
 }
 
 #jirka{
-	background-color: #221c35;
+	background-color: #221c35;
+}
+
+.mobile{
+	display: block;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.coffeeCup{
+	background-repeat: no-repeat;
+	width: 90px;
+	height: auto;
+	display: block;
+	position: absolute;
+	top: 66%;
+	right: 32%;
+}
+
+.cup{
+	width: 100%;
+}
+
+.steam{
+	background:url('../img/smoke-texture.png') no-repeat;
+	position: relative;
 }
 
 .screenshot{
@@ -197,6 +243,49 @@ nav ul li a{
 	left: 23%;
 	font-family: "proxima-nova", Helvetica, Arial, Sans-Serif;
 }
+
+.spin:hover{
+	-webkit-animation: spin1 0.8s ease-in-out;
+	-moz-animation: spin1 0.8s ease-in-out;
+	-o-animation: spin1 0.8s ease-in-out;
+	-ms-animation: spin1 0.8s ease-in-out;
+	animation: spin1 0.8s ease-in-out;
+	
+	transform: rotate(180deg);
+	transform-origin:40% 40%;
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-ms-transform-origin:40% 40%; /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	-webkit-transform-origin:40% 40%; /* Safari and Chrome */
+	-moz-transform: rotate(180deg); /* Firefox */
+	-moz-transform-origin:40% 40%; /* Firefox */
+	-o-transform: rotate(180deg); /* Opera */
+	-o-transform-origin:40% 40%; /* Opera */
+}
+
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(180deg); animation-play-state: paused;}
+
+
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(180deg); animation-play-state: paused;}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(180deg); animation-play-state: paused;}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(180deg); animation-play-state: paused;}
+}
+@-keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(180deg); animation-play-state: paused;}
+}
+
 
 /* #Page slider CSS
 ================================================== */
@@ -288,8 +377,6 @@ form > select{
 	color: #47a9c2;
 	font-family: "proxima-nova", Helvetica, Arial, Sans-Serif;
 }
-
-
 
 /* #Media Queries
 ================================================== */
