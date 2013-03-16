@@ -378,6 +378,28 @@ form > select{
 	font-family: "proxima-nova", Helvetica, Arial, Sans-Serif;
 }
 
+.mobileWrap{	
+	position: relative;
+	width: 780px;
+	height: 500px;
+	display: block;
+	top: 20%;	
+	margin: 0 auto;
+}
+
+.phoneWrap{
+	float:left;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.top{
+	margin-top: 5%;
+}
+
+.mobileImg{
+	position: relative;
+}
 /* #Media Queries
 ================================================== */
 
