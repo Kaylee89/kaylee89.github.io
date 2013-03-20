@@ -21,7 +21,7 @@
 		,	next	: function() {
 				this.to(this.current+1)
 			}
-		, prev	: function() {
+		,   prev	: function() {
 				this.to(this.current-1)
 			}
 		,	to	: function(index) {

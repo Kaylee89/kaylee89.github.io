@@ -20,6 +20,7 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <script src="js/libs/modernizr-2.6.2.min.js"></script>
         
+        
         <style type="text/css">
           .wf-loading .blog-title,
           .wf-loading .post-title {
@@ -44,7 +45,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
+                    <li><a href="contact.php">Contact me</a></li>
                     <li><a href="img/cv.pdf">C.V.</a></li>
                 </ul>
             </nav>
@@ -53,11 +54,13 @@
 		<ol class="curtains">
 
 		    <li id="intro" class="cover">
-
-		    	<h1 class="name">Kaylee Lim</h1>
 		    	
-		    	<div class="bokeh1">
-		    		<img src="img/starbokeh8.png" alt="bokeh" class="bokeh1"/>
+		    	<h1 class="name">Kaylee Lim</h1>
+
+		    	<div id="container">
+		    		<img src="img/bokeh/sparkles.png" class="background" />
+		    		<img src="img/bokeh/bokeh1.png" class="bokeh1" />
+		    		<img src="img/bokeh/bokeh2.png" class="bokeh2" />
 		    	</div>
 
 		    </li>
@@ -76,12 +79,27 @@
 					    	
 					    		<div class="screen bakery">La Voie Francaise</div>
 					    		
-					    		<div class="coffeeCup">
-					    			<img src="img/cup.png" alt="cup" class="cup"/>
-					    		</div>
-					    		
-					    		<div class="steam">
-					    		</div>
+					    		<div class="cupWrap">
+						    		<div class="coffeeCup">
+						    			<img src="img/cup.png" alt="cup" class="cup"/>
+						    		</div>
+						    		
+						    		<!--div class="steam">
+						    		</div>
+						    		<div class="steam">
+						    		</div>
+						    		<div class="steam">
+						    		</div>
+						    		<div class="steam">
+						    		</div>
+						    		<div class="steam">
+						    		</div>
+						    		<div class="steam">
+						    		</div>
+						    		<div class="steam">
+						    		</div-->
+						    		
+					    		</div>					    	
 					    		
 					    	</div>
 					    	
@@ -99,15 +117,26 @@
 					    	
 					    		<div class="phoneWrap top">
 					    			<img src="img/phone2.png" alt="phone" class="phone"/>
-					    			<!--img src="img/phoneGallery.png" alt="mobileImg" class="mobileImg"/-->
+					    			
+					    			<div class="phoneImgWrap">
+					    				<img src="img/phoneBlog.jpg" alt="mobileImg" class="mobileImg"/>
+					    			</div>
 					    		</div>
 					    		
 					    		<div class="phoneWrap">
 					    			<img src="img/phone.png" alt="phone" class="phone"/>
+					    			
+					    			<div class="phoneImgWrap">
+					    				<img src="img/phoneGallery.jpg" alt="mobileImg" class="mobileImgCenter"/>
+					    			</div>
 					    		</div>
 
 								<div class="phoneWrap top">
 									<img src="img/phone2.png" alt="phone" class="phone"/>
+									
+									<div class="phoneImgWrap">
+										<img src="img/phoneMap.jpg" alt="mobileImg" class="mobileImg"/>
+									</div>
 								</div>
 													    
 					    	</div>
@@ -168,7 +197,7 @@
 							<a href="#prevSlide" class="prevBtn"></a>
 							
 							<div class="screenshot">
-								<img src="img/preview/wow2.jpg" alt="wow2">
+								<img src="img/preview/wowCat.jpg" alt="wow2">
 							</div>
 							
 						    <p class="description">The Categories page makes use of popovers and a pyramid layout.</p>
@@ -253,6 +282,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/libs/jquery.zlayer.full.js"></script>
         <script src="js/libs/curtain.js"></script>
          <script src="js/custom.js"></script>
         <script src="js/plugins.js"></script>

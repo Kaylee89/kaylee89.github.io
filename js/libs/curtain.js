@@ -367,12 +367,12 @@
             
             if(self.options.enableKeys) {
                 self.$document.on('keydown', function(e){
-                    if(e.keyCode === 38 || e.keyCode === 37) {
+                    if(e.keyCode === 38 ) {
                         self.scrollToPosition('up');
                         e.preventDefault();
                         return false;
                     }
-                    if(e.keyCode === 40 || e.keyCode === 39){
+                    if(e.keyCode === 40 ){
                         self.scrollToPosition('down');
                         e.preventDefault();
                         return false;

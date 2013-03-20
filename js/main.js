@@ -5,6 +5,14 @@ $(document).ready(function() {
 			enableKeys: "true"			
 	});
 	
+	
+/*	Intro bokeh
+	========================================= */
+	
+	$('.background').zlayer({mass:15,confine:'y',canvas:'#container'});
+	$('.bokeh1').zlayer({mass:8,force:'push',canvas:'#container'});
+	$('.bokeh2').zlayer({mass:5,force:'push',canvas:'#container'});
+	
 
 /*	Bakery page
 	========================================= */
@@ -25,5 +33,17 @@ $(document).ready(function() {
 	$('a[href="#prevSlide"]').click(function(){
 		$(this).closest('.wideViewport').contentSlide('prev');
 	});
-
+	
+	$(document).keydown(function(e){
+		$visible = $('.wideViewport:visible')
+		
+	    if (e.keyCode == 37) { 
+	       $visible.eq(0).contentSlide('prev');
+	    }
+	    
+	    if (e.keyCode == 39) { 
+	       $visible.eq(0).contentSlide('next');
+	    }
+	});
+	
 });

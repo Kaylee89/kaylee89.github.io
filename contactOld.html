@@ -33,34 +33,64 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
-                    <li><a href="#">C.V.</a></li>
+                    <li><a href="contact.php">Contact me</a></li>
+                    <li><a href="img/cv.pdf">C.V.</a></li>
                 </ul>
             </nav>
         </header>
-        	
-        <p class="">If you would like to contact me about </p>
         
-        <div class="formContainer">
+        <div class="body-container">
+        	
+	        <h3 class="">Let's talk</h3> 	        
+	        
+	        <div class="formContainer">
 				
-			<form id="contactForm" action="post" method="post">
+				<form method="post" action="contact.php" id="contactform">
+					<fieldset>
+						<legend class="formLegend">Let's talk</legend>
+						
+						<?php if(isset($hasError)) { //If errors are found ?>
+							<p class="alert-message error">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
+						<?php } ?>
+	
+						<?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
+							<div class="alert-message success">
+								<p><strong>Message Successfully Sent!</strong></p>
+								<p>Thank you for dropping me a message <strong><?php echo $name;?></strong>! Your email was sent and I'll be in touch with you soon.</p>
+							</div>
+						<?php } ?>
+						
 				
-		    <label>Name</label>
-		    <input type="text" class="inputText" name="name" placeholder="your name here" required><br />
-		
-		    <label>Email</label>
-		    <input name="email" type="email" class="inputText" required><br />
-		
-		    <label>Message</label>
-		    <textarea name="message" placeholder="Do leave me a message" class="message"></textarea>
-		     
-		     <div class="success"></div>
-		
-		      <input id="submit" class="submitButton" name="submit" type="submit" value="Submit">
-		
-		</form>
+						<div class="clearfix">
+						
+							<div class="input">
+								<input type="text"  name="contactname" id="contactname" value="" class="required" role="input" aria-required="true" />
+							</div>
+						</div>
+						
+	
+						<div class="clearfix">
+				
+							<div class="input">
+								<input type="text" placeholder="E-mail" name="email" id="email" value="" class="required email" role="input" aria-required="true" />
+							</div>
+						</div>
+	
+						<div class="clearfix">
+							<div class="input">
+								<textarea rows="8"  placeholder="Message" name="message" id="message" class="required" role="textbox" aria-required="true"></textarea>
+							</div>
+						</div>
+						
+						<div class="actions">
+							<input type="submit" value="SEND" name="submit" id="submitButton" class="submitBtn" title="Click here to submit your message!" />
+						</div>
+					</fieldset>
+				</form>
+			</div><!--formContainer-->
 
-		</div>
+			</div><!--body container-->
+		
 		
         <div class="footer-container">
             <footer class="wrapper">
