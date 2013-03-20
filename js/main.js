@@ -46,4 +46,9 @@ $(document).ready(function() {
 	    }
 	});
 	
+	
+	/*	Intro - animation JQuery + javascript
+		========================================= */
+	
+		
 });

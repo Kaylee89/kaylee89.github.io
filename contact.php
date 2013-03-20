@@ -72,12 +72,13 @@ if(isset($_POST['submit'])) {
 
         <header>
             <h1 class="hideText">Kaylee's portfolio</h1>
-            <span class="nameSmall">Kaylee</span>
+            <span class="nameSmall"><a href="index.html">Kaylee</a></span>
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.php">Contact me</a></li>
-                    <li><a href="#">C.V.</a></li>
+                    <li><a href="img/cv.pdf">C.V.</a></li>
                 </ul>
             </nav>
         </header>
@@ -92,18 +93,6 @@ if(isset($_POST['submit'])) {
 					<fieldset>
 						<legend class="formLegend">Let's talk</legend>
 						
-						<?php if(isset($hasError)) { //If errors are found ?>
-							<p class="alert-message error">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
-						<?php } ?>
-	
-						<?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
-							<div class="alert-message success">
-								<p><strong>Message Successfully Sent!</strong></p>
-								<p>Thank you for dropping me a message <strong><?php echo $name;?></strong>! Your email was sent and I'll be in touch with you soon.</p>
-							</div>
-						<?php } ?>
-						
-				
 						<div class="clearfix">
 							<div class="input">
 								<input type="text" placeholder="Name" name="contactname" id="contactname" value="" class="required" role="input" aria-required="true" />
@@ -128,8 +117,27 @@ if(isset($_POST['submit'])) {
 					</fieldset>
 				</form>
 			</div><!--formContainer-->
+			
+			<div class="alertMessage">
+			
+				<?php if(isset($hasError)) { //If errors are found ?>
+					<p class="alert-message error">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
+				<?php } ?>
+				
+				<?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
+					<div class="alert-message success">
+						<p class="alertColor"><strong>Message Sent!</strong></p>
+						<p>Thank you for dropping me a message <strong><?php echo $name;?></strong>! Your email was sent and I'll be in touch with you soon.</p>
+					</div>
+				<?php } ?>
+			</div>
+			
+			<div class="mapWrap">
+				<span class="city">I'm currently based in Auckland</span>
+				<img src="img/map.png" class="map"/>
+			</div>
 
-			</div><!--body container-->
+		</div><!--body container-->
 		
 		
         <div class="footer-container">
