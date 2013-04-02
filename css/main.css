@@ -674,7 +674,7 @@ input[type=submit] {
 /* #Intro page CSS
 ================================================== */
 
-#container {
+#splashContainer {
 	width: 100%;
 	margin:auto; 
 	overflow:hidden; 

@@ -99,7 +99,7 @@ if(isset($_POST['submit'])) {
 		    	
 		    	<h1 class="name">Kaylee Lim</h1>
 				
-		    	<div id="container">
+		    	<div id="splashContainer">
 		    		<img src="img/bokeh/sparkles2.png" class="background" alt="sparkles"/>
 		    		<img src="img/bokeh/bokeh1.png" class="bokeh1" alt="bokeh"/>
 		    		<img src="img/bokeh/bokeh2.png" class="bokeh2" alt="bokeh"/>

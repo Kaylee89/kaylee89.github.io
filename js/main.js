@@ -10,9 +10,9 @@ $(document).ready(function() {
 /*	Intro bokeh
 	========================================= */
 	
-	$('.background').zlayer({mass:15,confine:'y',canvas:'#container'});
-	$('.bokeh1').zlayer({mass:9,force:'push',canvas:'#container'});
-	$('.bokeh2').zlayer({mass:5,force:'push',canvas:'#container'});
+	$('.background').zlayer({mass:15,confine:'y',canvas:'#splashContainer'});
+	$('.bokeh1').zlayer({mass:9,force:'push',canvas:'#splashContainer'});
+	$('.bokeh2').zlayer({mass:5,force:'push',canvas:'#splashContainer'});
 	
 
 /*	Bakery page
