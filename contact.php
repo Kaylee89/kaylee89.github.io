@@ -57,7 +57,7 @@ if(isset($_POST['submit'])) {
         <link rel="stylesheet" href="css/curtain.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="img/favicon.ico">
 
 		<script type="text/javascript" src="//use.typekit.net/dqz0kfp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -75,17 +75,14 @@ if(isset($_POST['submit'])) {
             <span class="nameSmall"><a href="index.html">Kaylee</a></span>
             <nav>
                 <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.php#bakery" class="curtainLinks">Work</a></li>
                     <li><a href="contact.php">Contact me</a></li>
                     <li><a href="img/cv.pdf">C.V.</a></li>
                 </ul>
             </nav>
         </header>
         
-        <div class="body-container">
-        	
-	        <h3 class="">Let's talk</h3> 	        
+        <div class="body-container"> 	        
 	        
 	        <div class="formContainer">
 				

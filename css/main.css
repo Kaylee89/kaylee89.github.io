@@ -19,7 +19,8 @@ header{
 	left: 0;
 	right: 0;
 	height: 40px;
-	background-color: #dae0dc;
+	/*background-color: #dae0dc;*/
+	background-color: #E1E6E3;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 	-webkit-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
 	   -moz-box-shadow: 0 6px 4px -6px rgba(0, 0, 0, 0.11);
@@ -44,8 +45,22 @@ nav ul li{
 
 nav ul li a{
 	text-decoration: none;
-	color: #ec5c5a;
-	font: 1.1em/1em "futura-pt", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	color: #f95f5c;
+	font: 300 1.1em/1em "futura-pt", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+nav ul li a:hover,
+.nameSmall:hover{
+	color: #7c7c7c;
+}
+
+.wf-loading h1 {
+  font-family: "corner-store";
+  visibility: hidden;
+}
+
+.wf-active h1 {
+  visibility: visible;
 }
 
 .hideText{
@@ -55,33 +70,31 @@ nav ul li a{
 .name{
 	z-index: 5;
 	position: absolute;
-	padding-top: 2.5em;
-	display: inline-block;
+	padding-top: 3.5em;
 	color: #f95f5c;
-	font: 5em "corner-store", sans-serif;
+	font: 5.3em "corner-store", sans-serif;
 	text-shadow: 0 2px 2px #fff;
-	width: 450px;
+	width: 500px;
 	text-align: left;
 	top: 0px;
 	left: 50%;
-	margin-left: -225px;
+	margin-left: -245px;
 	pointer-events: none;
   }
   
-  .introMsg{
-  	z-index: 5;
+  .option{
+  	z-index: 6;
   	position: absolute;
-  	padding-top: 6.5em;
-  	display: inline-block;
-  	color: #969696;
-  	font: 3em "ltc-bodoni-175", helvetica, sans-serif;
-  	text-shadow: 0 1px 1px #fff;
-  	width: 960px;
-  	text-align: left;
-  	top: 0px;
-  	left: 50%;
-  	margin-left: -480px;
+  	display: block;
+  	width: 70px;
+  	height: 60px;
+  	bottom: 10px;
+  	left: 30px;
   	pointer-events: none;
+  }
+  
+  .arrowKeys{
+  	width: 100%;
   }
   
   .test{
@@ -99,7 +112,7 @@ nav ul li a{
 .nameSmall a{
 	text-decoration: none;
 	color: #f95f5c;
-	text-shadow: 0 1px 1px #fff;
+	/*text-shadow: 0 1px 1px #fff;*/
 }
 
 .iMac{
@@ -114,7 +127,7 @@ nav ul li a{
 
 .nextBtn,
 .prevBtn{
-	opacity: 0.2;
+	opacity: 0.4;
 	position: absolute;
 	top: 42%;
 	right: 5%;
@@ -144,47 +157,109 @@ nav ul li a{
 .screen{
 	text-indent: -99999px;
 	display: block;
+
 }
 
 .bakery,
 .wow,
 .midGirth,
 .jirka,
-.techxpert {
-	background-image: url('../img/bakery.jpg');
+.techxpert,
+.dug,
+.ams {
+	background-image: url('../img/screen/bakery.jpg');
 	width: 417px;
 	height: 260px;
 	display: inline-block;
 	margin: 20px 22px 120px 22px;
+	-webkit-transition: all 1s ease-in-out;
+	   -moz-transition: all 1s ease-in-out;
+	     -o-transition: all 1s ease-in-out;
+	    -ms-transition: all 1s ease-in-out;
+	        transition: all 1s ease-in-out;
+}
+
+.bakery:hover{
+	background-image: url('../img/screen/bakeryHover.jpg');
 }
 
 .wow{
-	background-image: url('../img/wow.jpg');
+	background-image: url('../img/screen/wow.jpg');
+}
+
+.wow:hover{
+	background-image: url('../img/screen/wowHover.jpg');
 }
 
 .midGirth{
-	background-image: url('../img/middlegirth.jpg');
+	background-image: url('../img/screen/middlegirth.jpg');
+}
+
+.midGirth:hover{
+	background-image: url('../img/screen/middlegirthHover.jpg');
 }
 
 .jirka{
-	background-image: url('../img/jirka.jpg');
+	background-image: url('../img/screen/jirka.jpg');
+}
+
+.dug{
+	background-image: url('../img/screen/dug.jpg');
+}
+
+.dug:hover{
+	background-image: url('../img/screen/dugHover.jpg');
+}
+
+.ams{
+	background-image: url('../img/screen/ams.jpg');
+}
+
+.ams:hover{
+	background-image: url('../img/screen/amsHover.jpg');
 }
 
 .techxpert{
-	background-image: url('../img/techxpert.jpg');
+	background-image: url('../img/screen/techxpert.jpg');
 }
 
+.techxpert:hover{
+	background-image: url('../img/screen/techxpertHover.jpg');
+}
 
 /* #Page Styles
 ================================================== */
 
-h2{
+h1 {
+	font-size: 35px; 
+	color: #445668; 
+	text-align: center; 
+	margin: 0 0 35px 0; 
+	text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+h2,
+h3{
 	font-family: "proxima-nova", verdana, serif;
 	font-size: 2.2em;
 	width: 100%;
 	color: #4A4E46;
 	text-align: center;
 	font-weight: 300;
+}
+
+h3{
+	margin-top: 3em;
+	font-size: 1.8em;
+	
+}
+
+.link{
+	text-decoration: none;
+	font-size: 1em;
+	width: 100%;
+	text-align: center;
+	color: #6d6d6d;	
 }
 
 .subtitle{
@@ -211,6 +286,18 @@ h2{
 
 #jirka{
 	background-color: #221c35;
+}
+
+#dug{
+	background: url('../img/leather.png') repeat;
+}
+
+#ams{
+	background-color: #f9f9d7;
+}
+
+#techxpert{
+	background: url('../img/sneaker1.png') #fff repeat;
 }
 
 .mobile{
@@ -264,14 +351,8 @@ h2{
 	box-shadow:         0px 9px 19px rgba(52, 68, 59, 0.57);	
 }
 
-.description{
-	display: inline-block;
-	text-align: center;
-	width: 700px;
-	position: absolute;
-	bottom: 5.5em;
-	left: 23%;
-	font-family: "proxima-nova", Helvetica, Arial, Sans-Serif;
+.wowCat{
+	width: 80%;
 }
 
 .spin:hover{
@@ -362,8 +443,12 @@ h2{
 
 .formContainer{
 	float: left;
-	margin-top: 5em;
+	margin-top: 10em;
 	width: 400px;
+}
+
+.formContainerMain{
+	margin-top: 5em;
 }
 
 /*Contact form css styles*/
@@ -387,21 +472,31 @@ html {
 
 #contact {
 	width: 430px; 
-	margin: 60px auto; 
+	/*margin: 60px auto;*/
 	padding: 60px 30px;
-	background: #c9d0de; 
+	/*background: #c9d0de;*/
 	border: 1px solid #e1e1e1;
 	-moz-box-shadow: 0px 0px 8px #444;
 	-webkit-box-shadow: 0px 0px 8px #444;
 }
 
-h1 {
-	font-size: 35px; 
-	color: #445668; 
-	text-align: center; 
-	margin: 0 0 35px 0; 
-	text-shadow: 0px 1px 0px #f2f2f2;
+.description{
+	font-family: "proxima-nova", Helvetica, Arial, Sans-Serif;
+	font-size: 1.1em;
+	text-align: center;
+	position: relative;
+	top: 20%;
+	width: 40%;
+	height: 120px;
+	margin: 10px auto;
 }
+
+.description > p {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+}
+
 
 /*label {
 	float: left; 
@@ -538,7 +633,7 @@ input[type=submit] {
 	width: 780px;
 	height: 500px;
 	display: block;
-	top: 20%;	
+	top: 5%;	
 	margin: 0 auto;
 }
 
@@ -560,6 +655,14 @@ input[type=submit] {
 	left: 18px;
 }
 
+.ipad{
+	position: relative;
+	width: 600px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
 .top{
 	margin-top: 5%;
 }
@@ -576,11 +679,12 @@ input[type=submit] {
 	margin:auto; 
 	overflow:hidden; 
 	position:relative;
-	height:2000px;}
+	height:2000px;
+}
 	
-.background {z-index:1;  margin-left:-100px;}
-.bokeh1 {z-index:4; }
-.bokeh2 {z-index:2; margin-left:-153px; margin-top:50px;}
+.background {z-index:1;}
+.bokeh1 {z-index:4; margin-top: 20px; }
+.bokeh2 {z-index:2; margin-left:-153px; margin-top:250px;}
 
 .background,
 .bokeh1,

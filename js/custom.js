@@ -52,7 +52,7 @@
 
 	$.fn.contentSlide.defaults = {
 			start : 0
-		,	speed : 1000
+		,	speed : 2000
 	}
 
 }(jQuery);

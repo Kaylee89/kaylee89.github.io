@@ -1,8 +1,9 @@
 $(document).ready(function() {
 	
 	$('.curtains').curtain({
-			scrollSpeed : 1000,
-			enableKeys: "true"			
+			scrollSpeed : 2000,
+			enableKeys: "true",
+			curtainLinks: '.curtainLinks'			
 	});
 	
 	
@@ -10,13 +11,13 @@ $(document).ready(function() {
 	========================================= */
 	
 	$('.background').zlayer({mass:15,confine:'y',canvas:'#container'});
-	$('.bokeh1').zlayer({mass:8,force:'push',canvas:'#container'});
+	$('.bokeh1').zlayer({mass:9,force:'push',canvas:'#container'});
 	$('.bokeh2').zlayer({mass:5,force:'push',canvas:'#container'});
 	
 
 /*	Bakery page
 	========================================= */
-	$('#bakeryPort').contentSlide({
+	$('.bakeryPort').contentSlide({
 			start : 0
 		,	speed : 2000
 	})
@@ -46,9 +47,4 @@ $(document).ready(function() {
 	    }
 	});
 	
-	
-	/*	Intro - animation JQuery + javascript
-		========================================= */
-	
-		
 });
