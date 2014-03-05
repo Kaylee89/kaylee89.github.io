@@ -5,13 +5,34 @@
 
 /* Table of Content
 ==================================================
+	#Splash page CSS
 	#Site Styles
 	#Page Styles
 	#Media Queries
 	#Font-Face */
 
+
+/* #Splash page CSS
+================================================== */
+
+#splashContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -650px;
+	margin-top: -487px;
+	width: 1300px;
+	height: 975px;
+	overflow: visible;
+}
+
+.zLayerImage {
+	position:absolute; /*right: 50%; margin-right: -650px*/;
+}
+
 /* #Site Styles
 ================================================== */
+
 header{
 	z-index: 1000;
 	position: fixed;
@@ -80,9 +101,23 @@ nav ul li a:hover,
 	left: 50%;
 	margin-left: -245px;
 	pointer-events: none;
-  }
+}
   
-  .option{
+.nameSmall{
+	position: absolute;
+	top: 3px;
+	left: 1.8em;
+	font: 1.3em "corner-store", sans-serif;
+	color: #f95f5c;
+}
+
+.nameSmall a{
+	text-decoration: none;
+	color: #f95f5c;
+	/*text-shadow: 0 1px 1px #fff;*/
+}
+
+.option{
   	z-index: 6;
   	position: absolute;
   	display: block;
@@ -100,20 +135,6 @@ nav ul li a:hover,
   .test{
   	color: #3b8887;
   }
-
-.nameSmall{
-	position: absolute;
-	top: 3px;
-	left: 1.8em;
-	font: 1.3em "corner-store", sans-serif;
-	color: #f95f5c;
-}
-
-.nameSmall a{
-	text-decoration: none;
-	color: #f95f5c;
-	/*text-shadow: 0 1px 1px #fff;*/
-}
 
 .iMac{
 	background-image: url('../img/mac.png');
@@ -137,11 +158,11 @@ nav ul li a:hover,
 	height: 100px;
 	display: inline-block;
 	content: "";
-	-webkit-transition: opacity 0.8s ease-in-out;
-	-moz-transition: opactiy 0.8s ease-in-out;
-	-ms-transition: opacity 0.8s ease-in-out;
-	-o-transition: opacity 0.8s ease-in-out;
-	 transition: opacity 0.8s ease-in-out;
+	-webkit-transition: opacity 0.8s ease-in;
+	-moz-transition: opactiy 0.8s ease-in;
+	-ms-transition: opacity 0.8s ease-in;
+	-o-transition: opacity 0.8s ease-in;
+	 transition: opacity 0.8s ease-in;
 }
 
 .prevBtn{
@@ -154,12 +175,6 @@ nav ul li a:hover,
 	opacity: 1;
 }
 
-.screen{
-	text-indent: -99999px;
-	display: block;
-
-}
-
 .bakery,
 .wow,
 .midGirth,
@@ -167,65 +182,28 @@ nav ul li a:hover,
 .techxpert,
 .dug,
 .ams {
-	background-image: url('../img/screen/bakery.jpg');
 	width: 417px;
 	height: 260px;
-	display: inline-block;
-	margin: 20px 22px 120px 22px;
-	-webkit-transition: all 1s ease-in-out;
-	   -moz-transition: all 1s ease-in-out;
-	     -o-transition: all 1s ease-in-out;
-	    -ms-transition: all 1s ease-in-out;
-	        transition: all 1s ease-in-out;
+	padding: 20px 22px 120px 22px;
 }
 
-.bakery:hover{
-	background-image: url('../img/screen/bakeryHover.jpg');
+.screen img{
+	text-indent: -99999px;
+	-webkit-transition: opacity 1s ease-in-out;
+	  -moz-transition: opacity 1s ease-in-out;
+	  -o-transition: opacity 1s ease-in-out;
+	  -ms-transition: opacity 1s ease-in-out;
+	  transition: opacity 1s ease-in-out;
 }
 
-.wow{
-	background-image: url('../img/screen/wow.jpg');
+.screenTop:hover{
+	opacity: 0;
 }
 
-.wow:hover{
-	background-image: url('../img/screen/wowHover.jpg');
+.screenTop{
+	position: absolute;
 }
 
-.midGirth{
-	background-image: url('../img/screen/middlegirth.jpg');
-}
-
-.midGirth:hover{
-	background-image: url('../img/screen/middlegirthHover.jpg');
-}
-
-.jirka{
-	background-image: url('../img/screen/jirka.jpg');
-}
-
-.dug{
-	background-image: url('../img/screen/dug.jpg');
-}
-
-.dug:hover{
-	background-image: url('../img/screen/dugHover.jpg');
-}
-
-.ams{
-	background-image: url('../img/screen/ams.jpg');
-}
-
-.ams:hover{
-	background-image: url('../img/screen/amsHover.jpg');
-}
-
-.techxpert{
-	background-image: url('../img/screen/techxpert.jpg');
-}
-
-.techxpert:hover{
-	background-image: url('../img/screen/techxpertHover.jpg');
-}
 
 /* #Page Styles
 ================================================== */
@@ -670,25 +648,6 @@ input[type=submit] {
 .mobileImg{
 	position: relative;
 }
-
-/* #Intro page CSS
-================================================== */
-
-#splashContainer {
-	width: 100%;
-	margin:auto; 
-	overflow:hidden; 
-	position:relative;
-	height:2000px;
-}
-	
-.background {z-index:1;}
-.bokeh1 {z-index:4; margin-top: 20px; }
-.bokeh2 {z-index:2; margin-left:-153px; margin-top:250px;}
-
-.background,
-.bokeh1,
-.bokeh2 {position:absolute;}
 
 /* #Media Queries
 ================================================== */
