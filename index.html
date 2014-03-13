@@ -43,8 +43,8 @@
             <span class="nameSmall"><a href="index.php">Kaylee</a></span>
             <nav>
                 <ul>
-                    <li><a href="#bakery" class="curtainLinks">Work</a></li>
-                    <li><a href="contact.php">Contact me</a></li>
+                    <li><a href="#pet" class="curtainLinks">Work</a></li>
+                    <li><a href="#">About me</a></li>
                     <li><a href="img/cv.pdf">C.V.</a></li>
                 </ul>
             </nav>
@@ -56,11 +56,80 @@
 
 		    	<h1 class="name">Kaylee Lim</h1>
 
-			    	<div id="splashContainer">
-			    		<img src="img/bokeh/sparkles2.png" class="sparkles zLayerImage" alt="sparkles"/>
-			    		<img src="img/bokeh/bokeh1.png" class="bokeh1 zLayerImage" alt="bokeh"/>
-			    		<!--img src="img/bokeh/bokeh2.png" class="bokeh2" alt="bokeh"/-->
-			    	<div>
+		    	<div id="splashContainer">
+		    		<img src="img/bokeh/sparkles2.png" class="sparkles zLayerImage" alt="sparkles"/>
+		    		<img src="img/bokeh/bokeh1.png" class="bokeh1 zLayerImage" alt="bokeh"/>
+		    		<!--img src="img/bokeh/bokeh2.png" class="bokeh2" alt="bokeh"/-->
+		    	<div>
+		    </li>
+
+		    <li id="pet" class="cover">
+		    	<div class="wideViewport bakeryPort">
+
+		    		<div class="contentStrip">
+
+		    			<div class="contentWrapper">
+
+					    	<div class="option">
+					    		<img src="img/arrowKeys.png" class="arrowKeys" alt="arrowkeys"/>
+					    	</div>
+
+					        <div class="iMac">
+					        	<a href="http://pet.co.nz/clickmadness" target="_blank" class="link">
+					        		<div class="pet screen">
+					        			<img src="img/screen/petcm.jpg" class="screenTop" alt="pet"/>
+					        			<img src="img/screen/petcmHover.jpg" class="screenBtm" alt="pet"/>​
+					        		</div>
+					        	</a>
+					        </div>
+
+				        	<h2>Pet.co.nz - Click Madness Microsite</h2>
+				        	<p class="subtitle"> Responsive Design // HTML & LESS // HTML Emails </p>
+
+				       	</div>
+
+				       	<div class="contentWrapper" id="bakeryInfo">
+
+					    	<a href="#nextSlide" class="nextBtn"></a>
+					    	<a href="#prevSlide" class="prevBtn"></a>
+
+					    	<h3>// Responsive - Mobile version of website.</h3>
+
+					    	<div class="mobileWrap">
+
+					    		<div class="phoneWrap top">
+					    			<img src="img/phone2.png" alt="phone" class="phone"/>
+
+					    			<div class="phoneImgWrap">
+					    				<img src="img/phoneBlog.jpg" alt="mobileImg" class="mobileImg"/>
+					    			</div>
+					    		</div>
+
+					    		<div class="phoneWrap">
+					    			<img src="img/phone.png" alt="phone" class="phone"/>
+
+					    			<div class="phoneImgWrap">
+					    				<img src="img/phoneGallery.jpg" alt="mobileImg" class="mobileImgCenter"/>
+					    			</div>
+
+					    		</div>
+
+								<div class="phoneWrap top">
+									<img src="img/phone2.png" alt="phone" class="phone"/>
+
+									<div class="phoneImgWrap">
+										<img src="img/phoneMap.jpg" alt="mobileImg" class="mobileImg"/>
+									</div>
+								</div>
+
+					    	</div>
+
+						</div>
+
+				    </div>
+
+				</div>
+
 		    </li>
 
 		    <li id="bakery" class="cover">
@@ -395,54 +464,6 @@
 
 		       </div>
 		    </li>
-
-		    <!--li id="contact" class="cover">
-
-		        <div class="formContainerMain">
-
-					<form method="post" action="contact.php" id="contactform">
-						<fieldset>
-							<legend class="formLegend">Let's talk</legend>
-
-							<div class="clearfix">
-								<div class="input">
-									<input type="text" placeholder="Name" name="contactname" id="contactname" value="" class="required" role="input" aria-required="true" />
-								</div>
-							</div>
-
-							<div class="clearfix">
-								<div class="input">
-									<input type="text" placeholder="E-mail" name="email" id="email" value="" class="required email" role="input" aria-required="true" />
-								</div>
-							</div>
-
-							<div class="clearfix">
-								<div class="input">
-									<textarea rows="8" placeholder="Message" name="message" id="message" class="required" role="textbox" aria-required="true"></textarea>
-								</div>
-							</div>
-							<div class="actions">
-								<input type="submit" value="SEND" name="submit" id="submitButton" class="submitBtn" title="Click here to submit your message!" />
-							</div>
-						</fieldset>
-					</form>
-				</div> <!--formContainerMain-->
-
-				<!--div class="alertMessage">
-
-					<?php if(isset($hasError)) { //If errors are found ?>
-						<p class="alert-message error">Please check if you've filled all the fields with valid information and try again. Thank you.</p>
-					<?php } ?>
-
-					<?php if(isset($emailSent) && $emailSent == true) { //If email is sent ?>
-						<div class="alert-message success">
-							<p class="alertColor"><strong>Message Sent!</strong></p>
-							<p>Thank you for dropping me a message <strong><?php echo $name;?></strong>! Your email was sent and I'll be in touch with you soon.</p>
-						</div>
-					<?php } ?>
-
-				</div>
-		    </li-->
 
 		</ol>
 
