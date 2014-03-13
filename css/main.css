@@ -175,14 +175,14 @@ nav ul li a:hover,
 	opacity: 1;
 }
 
+.pet,
 .bakery,
 .wow,
 .midGirth,
 .jirka,
 .techxpert,
 .dug,
-.ams,
-.pet {
+.ams {
 	width: 417px;
 	height: 260px;
 	padding: 20px 22px 120px 22px;
