@@ -1,23 +1,23 @@
 $(document).ready(function() {
-	
+
 	$('.curtains').curtain({
 			scrollSpeed : 2000,
 			enableKeys: "true",
-			curtainLinks: '.curtainLinks'			
+			curtainLinks: '.curtainLinks'
 	});
-	
-	
+
+
 /*	Intro bokeh
 	========================================= */
-	
+
 	$('.sparkles').zlayer({mass:15,confine:'y',canvas:'#splashContainer'});
 	$('.bokeh1').zlayer({mass:10,force:'push',canvas:'#splashContainer'});
 	/*$('.bokeh2').zlayer({mass:1,force:'push',canvas:'#splashContainer'});*/
-	
+
 
 /*	Bakery page
 	========================================= */
-	$('.bakeryPort').contentSlide({
+	$('.slidePort').contentSlide({
 			start : 0
 		,	speed : 2000
 	})
@@ -34,17 +34,17 @@ $(document).ready(function() {
 	$('a[href="#prevSlide"]').click(function(){
 		$(this).closest('.wideViewport').contentSlide('prev');
 	});
-	
+
 	$(document).keydown(function(e){
 		$visible = $('.wideViewport:visible')
-		
-	    if (e.keyCode == 37) { 
+
+	    if (e.keyCode == 37) {
 	       $visible.eq(0).contentSlide('prev');
 	    }
-	    
-	    if (e.keyCode == 39) { 
+
+	    if (e.keyCode == 39) {
 	       $visible.eq(0).contentSlide('next');
 	    }
 	});
-	
+
 });
