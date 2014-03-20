@@ -1,6 +1,6 @@
 /*
 * CSS for personal portfolio site
-* Author: Kaylee Lim aka JH
+* Author: Kaylee Lim aka LJH
 */
 
 /* Table of Content
@@ -329,6 +329,10 @@ h3 {
 	height: auto;
 	display: block;
 	margin: 0 auto;
+}
+
+.wideScreen {
+	width: 900px;
 }
 
 .screenshot img {
