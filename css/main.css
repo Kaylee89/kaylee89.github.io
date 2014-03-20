@@ -324,7 +324,7 @@ h3 {
 
 .screenshot {
 	position: relative;
-	top: 15%;
+	top: 12%;
 	width: 700px;
 	height: auto;
 	display: block;
@@ -477,7 +477,7 @@ html {
 	font-size: 1.1em;
 	text-align: center;
 	position: relative;
-	top: 20%;
+	top: 10%;
 	width: 40%;
 	height: 120px;
 	margin: 10px auto;
